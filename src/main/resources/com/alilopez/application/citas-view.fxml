@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f1BB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alilopez.application.controllers.CitasController">
+   <children>
+      <Button fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" layoutX="447.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#onClickCloseButton" prefHeight="21.0" prefWidth="144.0" style="-fx-background-color: #EB5358;" text="Cerrar" />
+      <Label layoutX="36.0" layoutY="161.0" text="Nombre del paciente">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombrePacientInput" layoutX="36.0" layoutY="181.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #F0EB44;" />
+      <TextField fx:id="edadPacientInput" layoutX="36.0" layoutY="237.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #F0EB44;" />
+      <Label layoutX="36.0" layoutY="216.0" text="Edad">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="agendarCitaBtn" layoutX="95.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#onClickAgendarCita" style="-fx-background-color: #07ACE8;" text="Agendar cita">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="387.0" layoutY="163.0" prefHeight="21.0" prefWidth="132.0" text="Estatus de mi cita">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="estatusPacientLabel" layoutX="353.0" layoutY="277.0" text="Estatus: *****" />
+      <TextField fx:id="buscarPacientInput" layoutX="353.0" layoutY="210.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #F0EB44;" />
+      <Label layoutX="357.0" layoutY="189.0" text="Buscar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #EB9E05;">
+         <children>
+            <Label layoutX="214.0" layoutY="-7.0" text="Citas">
+               <font>
+                  <Font name="Cambria Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="9.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/calendario.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="casoPacientInput" layoutX="37.0" layoutY="286.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #F0EB44;" />
+      <Label layoutX="36.0" layoutY="265.0" text="Caso">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="buscarEstatusBtn" layoutX="420.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#onClickBuscarEstatus" style="-fx-background-color: #07ACE8;" text="Buscar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="65.0" fitWidth="84.0" layoutX="311.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/status-quo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="registroLabel" layoutX="36.0" layoutY="326.0" prefHeight="17.0" prefWidth="200.0" textFill="#00ff37">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

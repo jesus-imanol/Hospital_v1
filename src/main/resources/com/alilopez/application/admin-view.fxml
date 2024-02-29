@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4f1BB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alilopez.application.controllers.AdminController">
+   <children>
+      <Pane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #EB9E05;">
+         <children>
+            <Label layoutX="122.0" layoutY="17.0" prefHeight="31.0" prefWidth="344.0" text="Bienvenido administrador  ">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="65.0" layoutX="442.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cooperacion.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <TextField fx:id="infoValidarBtn" layoutX="123.0" layoutY="69.0" prefHeight="201.0" prefWidth="480.0" style="-fx-background-color: #F0EB44;" />
+      <Button fx:id="asignServiceBtn" layoutX="212.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#onClickAsignServioe" prefHeight="38.0" prefWidth="223.0" style="-fx-background-color: #9bd653;" text="Asignar el servicio médico">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="validarPacientBtn" layoutX="447.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#onClickValidarPaciente" prefHeight="38.0" prefWidth="152.0" style="-fx-background-color: #9bd653;" text="Validar paciente 👤">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="116.0" fitWidth="124.0" layoutX="7.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/aplicado.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeAdminBtn" layoutX="485.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#onClickCloseAdmin" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: red;" text="Salir">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="verPacientBtn1" layoutX="104.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#onClickVerPaciente" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: #9bd653;" text="Ver Paciente">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="noValidarBtn" layoutX="274.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#onClickNoValidarPaciente" prefHeight="38.0" prefWidth="139.0" style="-fx-background-color: red;" text="No validar">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
